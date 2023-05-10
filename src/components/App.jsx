@@ -41,7 +41,6 @@ export class App extends Component {
         height: '100vh',
         fontSize: 40,
         color: '#010101',
-          background: 'grey'
       }}
       >
         <Section title="Please Leave feedback">
