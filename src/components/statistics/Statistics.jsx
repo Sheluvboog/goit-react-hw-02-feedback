@@ -26,10 +26,12 @@ export const Statistics = ({ recall, total, positive, statics }) => {
 
 
 Statistics.propTypes = {
-    recaal: PropTypes.arrayOf(PropTypes.oneOf(['good', 'neutral', 'bad'])).isRequired,
+    recall: PropTypes.arrayOf(PropTypes.oneOf(['good', 'neutral', 'bad'])).isRequired,
     statics: PropTypes.shape({
         good: PropTypes.number.isRequired,
         neutral: PropTypes.number.isRequired,
         bad: PropTypes.number.isRequired,
-    }).isRequired
+    }).isRequired,
+    total: PropTypes.number.isRequired,
+    positive: PropTypes.func.isRequired,
 }
